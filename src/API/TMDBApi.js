@@ -1,5 +1,3 @@
-// API/TMDBApi.js
-
 const API_TOKEN = "a5716a59a3e5ffdac2252f9200176efc";
 
 export function getFilmsFromApiWithSearchedText (text, page) {

@@ -15,7 +15,6 @@ class FilmDetail extends React.Component {
   }
 
   componentDidMount() {
-    // const idFilm = this.props.route.params.idFilm;
     getFilmDetailFromApi(this.props.route.params.idFilm).then(data => {
       this.setState({
         film: data,
@@ -26,7 +25,6 @@ class FilmDetail extends React.Component {
 
   displayLoading() {
     if (this.state.isLoading) {
-      // Si isLoading vaut true, on affiche le chargement à l'écran
       return (
         <View style={styles.loading_container}>
           <ActivityIndicator size='large' />

@@ -1,7 +1,5 @@
-// Components/Search.js
-
 import React from 'react'
-import { StyleSheet, View, TextInput, Button, Text, FlatList, ActivityIndicator, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, TextInput, Text, FlatList, ActivityIndicator, TouchableOpacity } from 'react-native'
 import FilmItem from './FilmItem'
 import { getFilmsFromApiWithSearchedText } from '../API/TMDBApi'
 
@@ -50,7 +48,7 @@ class Search extends React.Component {
   }
   
     _searchTextInputChanged(text) {
-      this.searchedText = text // Modification du texte recherché à chaque saisie de texte, sans passer par le setState comme avant
+      this.searchedText = text
     }
   
     _displayLoading() {
